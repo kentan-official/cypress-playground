@@ -1,4 +1,5 @@
-/// <reference types="Cypress" />
+import { Kentan } from '@kentan-official/core';
+import { ForExample } from '../../sketches/example.sketch';
 
 context('Files', () => {
   beforeEach(() => {
@@ -23,7 +24,8 @@ context('Files', () => {
       .and('include', 'Using fixtures to represent data')
 
     // you can also just write the fixture in the route
-    cy.route('GET', 'comments/*', 'fixture:example.json').as('getComment')
+    const example = Kentan.sketch(ForExample).model();
+    cy.route('GET', 'comments/*', example).as('getComment')
 
     // we have code that gets a comment when
     // the button is clicked in scripts.js

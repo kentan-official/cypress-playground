@@ -41,6 +41,7 @@
   "devDependencies": {
     "@bahmutov/print-env": "1.1.0",
     "@cypress/releaser": "0.2.2",
+    "@kentan-official/core": "2.0.3",
     "colon-names": "1.0.0",
     "cypress": "3.1.0",
     "eslint": "5.3.0",

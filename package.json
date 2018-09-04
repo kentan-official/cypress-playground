@@ -39,6 +39,7 @@
     "npm-run-all": "^4.1.2"
   },
   "devDependencies": {
+    "@bahmutov/add-typescript-to-cypress": "2.0.0",
     "@bahmutov/print-env": "1.1.0",
     "@cypress/releaser": "0.2.2",
     "@kentan-official/core": "2.0.3",
